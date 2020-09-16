@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'rubocop', '~>0.81.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+#Devise authentication
+gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
