@@ -24,3 +24,5 @@
 <br>
 
 <%= link_to 'New Post', new_post_path %>
+<%= link_to 'Logout', destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure you want to logout?' }, class: "btn btn-outline-secondary" %>
+
