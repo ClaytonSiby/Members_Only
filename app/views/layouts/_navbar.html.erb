@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-light bg-dark">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
     <%= link_to root_path, class: "navbar-brand" do %>
-    <h4 class="title text-light">Posts</h4>
+    <h4 class="title"><span class="orangered">P</span>o<span class="orangered">s</span>t<span class="orangered">s</span></h4>
     <% end%>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -9,8 +9,8 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
        <% if user_signed_in?%>
             <div class="navbar-nav">
-               <%= link_to current_user.name, edit_user_registration_path, class: "btn btn-info btn-md" %>
-               <%= link_to "logout", destroy_user_session_path, method: :delete, class: "btn btn-info btn-md" %>
+               <%= link_to current_user.name, edit_user_registration_path, class: "btn  btn-md mr-3" %>
+               <%= link_to "logout", destroy_user_session_path, method: :delete, class: "btn btn-md" %>
             </div>
          <% else %> 
          <div class="navbar-nav">

@@ -16,7 +16,15 @@
 
 @import 'bootstrap/scss/bootstrap';
 
-.card {
+.length_restriction {
     max-width: 30rem;
     margin: auto;
+}
+
+.orangered {
+    color: orangered;
+}
+
+.bg_orangered {
+    background-color: orangered;
 }
