@@ -8,13 +8,13 @@
       <%= f.input :content, label: "Content:", input_html: { class: "textarea" }, wrapper: false, label_html: {class: "label"}, placeholder: "Compose a new post..." %>
     </div>
 
-    <%= f.button :submit, class: "btn btn-md orangered"%>
+    <%= f.button :submit, class: "btn btn-md bg_orangered text-light"%>
   </div>
   
 <% end %>
   <% @posts.each do | post | %>
     <% if user_signed_in? %>
-      <div class="card mb-4 length_restriction">
+      <div class="card my-3 length_restriction">
         <div class="card-header bg_orangered">
           <h3 class="title"><%= post.title %></h3>
         </div>
