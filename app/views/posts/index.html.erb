@@ -23,9 +23,9 @@
         </div>
         <div class="card-footer">
         
-          <p>Created by: <strong><%= post.user.name if post.user %></strong></p>
+          <p><span class="orangered italic">Created by:</span> <strong><%= post.user.name if post.user %></strong></p>
+          <p><span class="purplish italic">Time: </span> <%= time_ago_in_words(post.created_at) %> ago</p>
           <small class="username"><%= post.user.username if post.user %></small>
-        
         </div>
       </div>
     <% else %>
