@@ -22,8 +22,10 @@
           <p class="card-text"><%= post.content%></p>
         </div>
         <div class="card-footer">
-          <p>Created by: <strong><%= post.user.name%></strong></p>
-          <small class="username"><%= post.user.email %></small>
+        
+          <p>Created by: <strong><%= post.user.name if post.user %></strong></p>
+          <small class="username"><%= post.user.username if post.user %></small>
+        
         </div>
       </div>
     <% else %>
