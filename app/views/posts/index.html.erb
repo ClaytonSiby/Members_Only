@@ -4,11 +4,11 @@
 
   <div class="length_restriction">
     <div class="form-group">
-        <%= f.input :title, label: "Post title: ", input_html: { class: "form-control" }, wrapper: false, label_html: { class: "label text-purplish" }, placeholder: "provide a title for the post..." %>
-      <%= f.input :content, label: "Content:", input_html: { class: "textarea" }, wrapper: false, label_html: {class: "label text-purplish"}, placeholder: "Compose a new post..." %>
+        <%= f.input :title, label: "Post title: ", input_html: { class: "form-control" }, wrapper: false, label_html: { class: "label" }, placeholder: "provide a title for the post..." %>
+      <%= f.input :content, label: "Content:", input_html: { class: "textarea" }, wrapper: false, label_html: {class: "label"}, placeholder: "Compose a new post..." %>
     </div>
 
-    <%= f.button :submit, class: "btn mb-2 bg_orangered text-light"%>
+    <%= f.button :submit, class: "btn btn-md orangered"%>
   </div>
   
 <% end %>
