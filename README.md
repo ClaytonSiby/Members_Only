@@ -5,7 +5,7 @@
 ![Screenshot](app/assets/images/members_only_shot.png)
 
 ## Live Demo
-https://arcane-thicket-18116.herokuapp.com/
+[Live Demo Link](https://arcane-thicket-18116.herokuapp.com/) 
 
 **Completed the necessary steps in building an exclusive clubhouse where members can write private posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it, thus  implementing authentication systems so users can only access areas of a site they are authorized to.
 
