@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md navbar-light bg_purple">
+    <%= link_to root_path, class: "navbar-brand" do %>
+    <h4 class="title text-light"><span class="orangered">P</span>o<span class="orangered">s</span>t<span class="orangered">s</span></h4>
+    <% end%>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+       <% if user_signed_in?%>
+            <div class="navbar-nav">
+               <%= link_to current_user.name, edit_user_registration_path, class: "btn btn-md text-light", title: 'Click to edit profile' %>
+               <%= link_to "logout", destroy_user_session_path, method: :delete, class: "btn btn-md text-light", title: 'Click to SignOut' %>
+            </div>
+         <% else %> 
+         <div class="navbar-nav">
+               <%= link_to "Sign In", new_user_session_path, class: "btn text-light btn-md mr-3 text-light", title: 'SignIn to your account' %>
+               <%= link_to "Sign Up", new_user_registration_path, class: "btn text-light btn-md text-light", title: 'Create account' %>
+            </div>
+       <% end %>
+       
+    </div>
+</nav>
